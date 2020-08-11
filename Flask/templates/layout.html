@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.css') }}"/>
+    <title>::Orlando Rozas::{%block titulo%}{%endblock%}</title>
+</head>
+<body>
+    <div class="container">
+        <ul class="nav nav-pills">
+            <li role="presentation">
+                <a href="{{ url_for('index') }}"> Home</a>
+            </li>
+            <li>
+                <a href="{{ url_for('servicios') }}"> Servicios</a>
+            </li>
+            <li>
+                <a href="{{ url_for('contactos', parametro='esto-es-una-prueba')}}">Contactos</a>
+                
+            </li>
+            <li>
+                <a href="{{ url_for('nosotros') }}"> Nosotros</a>
+            </li>
+          
+            
+        </ul>
+        {%block content%} {%endblock%}
+    </div>
+</body>
+</html>

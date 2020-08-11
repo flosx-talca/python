@@ -1,0 +1,14 @@
+{%extends 'layout.html'%}
+{%block titulo%}
+SERVICIOS
+{%endblock%}
+
+{%block content%}
+    <h1>Este son nuestros SERVICIOS </h1>
+    <ul>
+        <li><a href="{{url_for('servicios_detalle', slug='servicio-uno')}}">servicio uno</a></li>
+        <li><a href="">servicio dos</a></li>
+        <li><a href="">servicio tres</a></li>
+        <li><a href="{{url_for('index')}}">Volver</a></li>
+    </ul>
+{%endblock%}
